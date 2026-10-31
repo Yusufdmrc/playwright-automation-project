@@ -1,14 +1,20 @@
 {
   "name": "playwright-automation-project",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "description": "Playwright + POM automation framework for automationexercise.com",
   "author": "",
   "license": "ISC",
-  "description": "",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report reports/html"
+  },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3"
   }
 }
