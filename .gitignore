@@ -10,19 +10,22 @@ blob-report/
 playwright/.cache/
 .cache/
 
-# Cucumber & Test Outputs
+# Test Outputs & Reports
 reports/*
 !reports/.gitkeep
 screenshots/*
 !screenshots/.gitkeep
-cucumber-report.html
-cucumber-report.json
 
 # Environment Variables & Secrets
 .env
 .env.local
 .env.*.local
 !.env.example
+
+# Test Data
+test-data/*
+!test-data/.gitkeep
+!test-data/*.example.json
 
 # Logs
 npm-debug.log*
@@ -40,4 +43,7 @@ Thumbs.db
 *.swp
 *.swo
 
+# MCP Artifacts
 .playwright-mcp
+
+test-data
